@@ -88,6 +88,6 @@ const finances = [
 ];
 
 console.log("Financial Analysis"); 
-console.log("----------------");
+console.log("------------------");
 const totalMonths = finances.length;
 console.log("total number of months: " + finances.length); 
