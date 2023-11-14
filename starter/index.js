@@ -1,93 +1,136 @@
 const finances = [
-  ['Jan-2010', 867884],
-  ['Feb-2010', 984655],
-  ['Mar-2010', 322013],
-  ['Apr-2010', -69417],
-  ['May-2010', 310503],
-  ['Jun-2010', 522857],
-  ['Jul-2010', 1033096],
-  ['Aug-2010', 604885],
-  ['Sep-2010', -216386],
-  ['Oct-2010', 477532],
-  ['Nov-2010', 893810],
-  ['Dec-2010', -80353],
-  ['Jan-2011', 779806],
-  ['Feb-2011', -335203],
-  ['Mar-2011', 697845],
-  ['Apr-2011', 793163],
-  ['May-2011', 485070],
-  ['Jun-2011', 584122],
-  ['Jul-2011', 62729],
-  ['Aug-2011', 668179],
-  ['Sep-2011', 899906],
-  ['Oct-2011', 834719],
-  ['Nov-2011', 132003],
-  ['Dec-2011', 309978],
-  ['Jan-2012', -755566],
-  ['Feb-2012', 1170593],
-  ['Mar-2012', 252788],
-  ['Apr-2012', 1151518],
-  ['May-2012', 817256],
-  ['Jun-2012', 570757],
-  ['Jul-2012', 506702],
-  ['Aug-2012', -1022534],
-  ['Sep-2012', 475062],
-  ['Oct-2012', 779976],
-  ['Nov-2012', 144175],
-  ['Dec-2012', 542494],
-  ['Jan-2013', 359333],
-  ['Feb-2013', 321469],
-  ['Mar-2013', 67780],
-  ['Apr-2013', 471435],
-  ['May-2013', 565603],
-  ['Jun-2013', 872480],
-  ['Jul-2013', 789480],
-  ['Aug-2013', 999942],
-  ['Sep-2013', -1196225],
-  ['Oct-2013', 268997],
-  ['Nov-2013', -687986],
-  ['Dec-2013', 1150461],
-  ['Jan-2014', 682458],
-  ['Feb-2014', 617856],
-  ['Mar-2014', 824098],
-  ['Apr-2014', 581943],
-  ['May-2014', 132864],
-  ['Jun-2014', 448062],
-  ['Jul-2014', 689161],
-  ['Aug-2014', 800701],
-  ['Sep-2014', 1166643],
-  ['Oct-2014', 947333],
-  ['Nov-2014', 578668],
-  ['Dec-2014', 988505],
-  ['Jan-2015', 1139715],
-  ['Feb-2015', 1029471],
-  ['Mar-2015', 687533],
-  ['Apr-2015', -524626],
-  ['May-2015', 158620],
-  ['Jun-2015', 87795],
-  ['Jul-2015', 423389],
-  ['Aug-2015', 840723],
-  ['Sep-2015', 568529],
-  ['Oct-2015', 332067],
-  ['Nov-2015', 989499],
-  ['Dec-2015', 778237],
-  ['Jan-2016', 650000],
-  ['Feb-2016', -1100387],
-  ['Mar-2016', -174946],
-  ['Apr-2016', 757143],
-  ['May-2016', 445709],
-  ['Jun-2016', 712961],
-  ['Jul-2016', -1163797],
-  ['Aug-2016', 569899],
-  ['Sep-2016', 768450],
-  ['Oct-2016', 102685],
-  ['Nov-2016', 795914],
-  ['Dec-2016', 60988],
-  ['Jan-2017', 138230],
-  ['Feb-2017', 671099],
+  { month : 'Jan-2010', amount : 867884 },
+  { month : 'Feb-2010', amount : 984655 },
+  { month : 'Mar-2010', amount : 322013 },
+  { month : 'Apr-2010', amount : -69417 },
+  { month : 'May-2010', amount : 310503 },
+  { month : 'Jun-2010', amount : 522857 },
+  { month : 'Jul-2010', amount : 1033096 },
+  { month : 'Aug-2010', amount : 604885 },
+  { month : 'Sep-2010', amount : -216386 },
+  { month : 'Oct-2010', amount : 477532 },
+  { month : 'Nov-2010', amount : 893810 },
+  { month : 'Dec-2010', amount : -80353 },
+  { month : 'Jan-2011', amount : 779806 },
+  { month : 'Feb-2011', amount : -335203},
+  { month : 'Mar-2011', amount : 697845 },
+  { month : 'Apr-2011', amount : 793163 },
+  { month : 'May-2011', amount : 485070 },
+  { month : 'Jun-2011', amount : 584122 },
+  { month : 'Jul-2011', amount : 62729 },
+  { month : 'Aug-2011', amount : 668179 },
+  { month : 'Sep-2011', amount : 899906 },
+  { month : 'Oct-2011', amount : 834719 },
+  { month : 'Nov-2011', amount : 132003 },
+  { month : 'Dec-2011', amount : 309978 },
+  { month : 'Jan-2012', amount : -755566 },
+  { month : 'Feb-2012', amount : 1170593 },
+  { month : 'Mar-2012', amount : 252788 },
+  { month : 'Apr-2012', amount : 1151518 } ,
+  { month : 'May-2012', amount : 817256 },
+  { month : 'Jun-2012', amount : 570757 },
+  { month : 'Jul-2012', amount : 506702 },
+  { month : 'Aug-2012', amount : -1022534 },
+  { month : 'Sep-2012', amount : 475062 },
+  { month : 'Oct-2012', amount : 779976 },
+  { month : 'Nov-2012', amount : 144175 },
+  { month : 'Dec-2012', amount : 542494 },
+  { month : 'Jan-2013', amount : 359333 },
+  { month : 'Feb-2013', amount : 321469 },
+  { month : 'Mar-2013', amount : 67780 },
+  { month : 'Apr-2013', amount : 471435 },
+  { month :'May-2013', amount : 565603 },
+  { month : 'Jun-2013', amount : 872480 },
+  { month : 'Jul-2013', amount : 789480 },
+  { month : 'Aug-2013', amount : 999942 },
+  { month : 'Sep-2013', amount : -1196225 },
+  { month : 'Oct-2013', amount : 268997 },
+  { month : 'Nov-2013', amount : -687986 },
+  { month : 'Dec-2013', amount : 1150461 },
+  { month : 'Jan-2014', amount : 682458 },
+  { month : 'Feb-2014', amount : 617856 },
+  { month : 'Mar-2014', amount : 824098 },
+  { month : 'Apr-2014', amount : 581943 },
+  { month : 'May-2014', amount : 132864 },
+  { month : 'Jun-2014', amount : 448062 },
+  { month : 'Jul-2014', amount : 689161 },
+  { month : 'Aug-2014', amount : 800701 },
+  { month : 'Sep-2014', amount : 1166643 },
+  { month : 'Oct-2014', amount : 947333 },
+  { month : 'Nov-2014', amount : 578668 },
+  { month : 'Dec-2014', amount : 988505 },
+  { month : 'Jan-2015', amount : 1139715 },
+  { month : 'Feb-2015', amount : 1029471 },
+  { month : 'Mar-2015', amount : 687533 },
+  { month : 'Apr-2015', amount : -524626 },
+  { month : 'May-2015', amount : 158620 },
+  { month : 'Jun-2015', amount : 87795 },
+  { month : 'Jul-2015', amount : 423389 },
+  { month : 'Aug-2015', amount : 840723 },
+  { month : 'Sep-2015', amount : 568529 },
+  { month : 'Oct-2015', amount : 332067 },
+  { month : 'Nov-2015', amount : 989499 },
+  { month : 'Dec-2015', amount : 778237 },
+  { month : 'Jan-2016', amount : 650000 },
+  { month : 'Feb-2016', amount : -1100387 },
+  { month : 'Mar-2016', amount : -174946 },
+  { month : 'Apr-2016', amount : 757143 },
+  { month : 'May-2016', amount : 445709 },
+  { month : 'Jun-2016', amount : 712961 },
+  { month : 'Jul-2016', amount : -1163797 },
+  { month : 'Aug-2016', amount : 569899 },
+  { month : 'Sep-2016', amount : 768450 },
+  { month : 'Oct-2016', amount : 102685 },
+  { month : 'Nov-2016', amount : 795914 },
+  { month : 'Dec-2016', amount : 60988 },
+  { month : 'Jan-2017', amount : 138230 },
+  { month : 'Feb-2017', amount : 671099 }
 ];
 
 console.log("Financial Analysis"); 
 console.log("------------------");
 const totalMonths = finances.length;
-console.log("total number of months: " + finances.length); 
+console.log("Total Months: " + finances.length); 
+
+
+// Initialize variables for profits and losses
+var totalProfit = 0;
+var totalLoss = 0;
+
+// Calculate total profits and losses
+finances.forEach(entry => {
+  if (entry.amount > 0) {
+    totalProfit += entry.amount;
+  } else {
+    totalLoss += Math.abs(entry.amount); // Make sure to use the absolute value for losses
+  }
+});
+
+// Calculate the net total
+var netTotal = totalProfit - totalLoss;
+
+//console.log('Total Profit:', totalProfit);
+//console.log('Total Loss:', totalLoss);
+console.log('Total: $', netTotal);
+
+// Initialize variables
+var totalChange = 0;
+
+// Calculate monthly changes
+for (var i = 1; i < finances.length; i++) {
+  var change = finances[i].amount - finances[i - 1].amount;
+  totalChange += change;
+}
+
+// Calculate average change
+var averageChange = totalChange / (finances.length - 1);
+
+//console.log('Total Change:', totalChange);
+//console.log('Average Change:', averageChange);
+
+var number = averageChange;
+
+// Round to the nearest hundredth
+let roundedNumber = number.toFixed(2);
+
+console.log("Average Change : " + roundedNumber);
