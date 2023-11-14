@@ -102,7 +102,7 @@ finances.forEach(entry => {
   if (entry.amount > 0) {
     totalProfit += entry.amount;
   } else {
-    totalLoss += Math.abs(entry.amount); // Make sure to use the absolute value for losses
+    totalLoss += Math.abs(entry.amount); 
   }
 });
 
@@ -131,6 +131,28 @@ var averageChange = totalChange / (finances.length - 1);
 var number = averageChange;
 
 // Round to the nearest hundredth
-let roundedNumber = number.toFixed(2);
-
+var roundedNumber = number.toFixed(2);
 console.log("Average Change : " + roundedNumber);
+
+
+// Initialize variables
+var maxIncrease = 0;
+var maxIncreaseMonth = '';
+var minDecrease = 0;
+var minDecreaseMonth = '';
+
+// Calculate monthly changes and find the greatest increase and greatest decrease
+for (var i = 1; i < finances.length; i++) {
+  var change = finances[i].amount - finances[i - 1].amount;
+
+  if (change > maxIncrease) {
+    maxIncrease = change;
+    maxIncreaseMonth = finances[i].month;
+  } else if  (change < minDecrease) {
+    minDecrease = change;
+    minDecreaseMonth = finances[i].month;
+  }
+}
+
+console.log('Greatest Increase in Profits/Losses:', maxIncreaseMonth , "($",maxIncrease , ")" );
+console.log('Greatest Decrease in Profits/Losses: ', minDecreaseMonth  , "($" , minDecrease , ")" );
