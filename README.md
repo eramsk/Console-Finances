@@ -23,6 +23,6 @@ an index.html file is created for landing page and a script.js file is created w
   Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
 
 # Screenshots:
-![Screenshot1](../Console-Finances/images/Screenshot1.png)
-![Screenshot2](../Console-Finances/images/Screenshot2.png)
-![Screenshot3](../Console-Finances/images/Screenshot3.png)
+![screenshot1](https://github.com/eramsk/Console-Finances/blob/main/images/Screenshot1.png?raw=true)
+![screenshot2](https://github.com/eramsk/Console-Finances/blob/main/images/Screenshot2.png?raw=true)
+![screenshot3](https://github.com/eramsk/Console-Finances/blob/main/images/Screenshot3.png?raw=true)
